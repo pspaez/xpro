@@ -79,23 +79,70 @@ header nav div div .usaflag {
   padding-top: 5px;
 }
 
-.video__container {
+.section__video {
+  padding: 0 !important;
+}
+.section__video .video__container {
   position: relative;
   z-index: -100;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
 }
-.video__container video {
+.section__video .video__container video {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100vw;
+  height: auto;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.title__container .title {
+  font-family: "gotham-Bold";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  line-height: 32px;
+  width: 90%;
+  padding: 10px;
+}
+
+.family__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.family__container .family__item {
+  padding: 10px;
+  width: 90%;
+}
+.family__container .family__item .family__logo__container {
+  display: flex;
+  justify-content: center;
+}
+.family__container .family__item .family__logo__container img {
+  width: 120px;
+  padding: 20px;
+}
+.family__container .family__item h2 {
+  font-family: "gotham-bold";
+  font-size: 20px;
+}
+.family__container .family__item p {
+  font-family: "gotham-book";
+  font-size: 16px;
 }
 
 /*Tablet*/
+@media only screen and (min-width: 700px) {
+  .family__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 /*Desktop*/
 @media only screen and (min-width: 992px) {
   header nav div img {
@@ -126,6 +173,20 @@ header nav div div .usaflag {
     padding: 10px;
     text-transform: uppercase;
   }
+  .title__container {
+    margin-top: 50px;
+  }
+  .title__container .title {
+    font-size: 35px;
+  }
+  .family__container {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .family__container .family__item {
+    margin: 20px;
+  }
 }
 /*Desktop xxl*/
 @media only screen and (min-width: 1500px) {
@@ -134,5 +195,8 @@ header nav div div .usaflag {
   }
   .txt__nav {
     margin-right: 200px;
+  }
+  .title__container {
+    margin-top: 80px;
   }
 }/*# sourceMappingURL=styles.css.map */
