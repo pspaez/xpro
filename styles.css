@@ -129,11 +129,44 @@ header nav div div .usaflag {
 }
 .family__container .family__item h2 {
   font-family: "gotham-bold";
-  font-size: 20px;
+  font-size: 18px;
 }
 .family__container .family__item p {
   font-family: "gotham-book";
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.qs__container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.qs__container .qs {
+  background-image: url(./media/banner_1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qs__container .qs h2 {
+  font-family: "gotham-bold";
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #e50914;
+  text-align: center;
+  width: 80%;
+}
+.qs__container .qs p {
+  font-family: "gotham-book";
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+  width: 80%;
 }
 
 /*Tablet*/
@@ -143,6 +176,13 @@ header nav div div .usaflag {
     justify-content: center;
   }
 }
+.qs__container .qs h2 {
+  width: 70%;
+}
+.qs__container .qs p {
+  width: 70%;
+}
+
 /*Desktop*/
 @media only screen and (min-width: 992px) {
   header nav div img {
@@ -187,6 +227,13 @@ header nav div div .usaflag {
   .family__container .family__item {
     margin: 20px;
   }
+  .qs__container .qs h2 {
+    width: 40%;
+    font-size: 28px;
+  }
+  .qs__container .qs p {
+    width: 40%;
+  }
 }
 /*Desktop xxl*/
 @media only screen and (min-width: 1500px) {
@@ -198,5 +245,12 @@ header nav div div .usaflag {
   }
   .title__container {
     margin-top: 80px;
+  }
+  .qs__container .qs h2 {
+    width: 32%;
+    font-size: 30px;
+  }
+  .qs__container .qs p {
+    width: 32%;
   }
 }/*# sourceMappingURL=styles.css.map */
