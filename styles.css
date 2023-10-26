@@ -48,7 +48,7 @@ header nav div .navbar-toggler {
   color: #fff;
 }
 header nav div img {
-  width: 140px;
+  width: 70px;
   padding: 10px;
 }
 header nav div button {
@@ -60,8 +60,18 @@ header nav div button span {
 header nav div button span i {
   font-size: 28px;
 }
-header nav div div .nav-item a {
+header nav div div .nav__item--who {
   color: #fff;
+}
+header nav div div .li__container {
+  display: flex;
+  align-items: center;
+}
+header nav div div .nav-item span {
+  font-family: "gotham-light";
+  text-transform: none;
+  font-size: 14px;
+  padding-left: 10px;
 }
 header nav div div .nav-link {
   color: #fff !important;
@@ -70,13 +80,16 @@ header nav div div .nav-link {
   padding: 10px;
   text-transform: uppercase;
 }
-header nav div div .nav__item--in {
-  font-size: 25px;
+header nav div div .nav__item--ic {
+  font-size: 20px;
 }
 header nav div div .usaflag {
-  width: 45px;
+  width: 35px;
   padding-left: 0;
   padding-top: 5px;
+}
+header nav div div .txt__ev {
+  font-family: "gotham-light";
 }
 
 .section__video {
@@ -169,24 +182,97 @@ header nav div div .usaflag {
   width: 80%;
 }
 
+.mision__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.mision__container .mision__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mision__container .mision__left h2 {
+  font-family: "gotham-bold";
+  text-transform: uppercase;
+  font-size: 23px;
+  width: 90%;
+  color: #e50914;
+}
+.mision__container .mision__left p {
+  font-family: "gotham-book";
+  font-size: 14px;
+  width: 90%;
+}
+.mision__container .mision__left ul {
+  width: 90%;
+  padding-left: 0;
+}
+.mision__container .mision__left ul li {
+  list-style-type: none;
+  font-family: "gotham-bold";
+  font-size: 16px;
+}
+.mision__container .mision__right {
+  margin-top: 30px;
+}
+.mision__container .mision__right .branchs__container {
+  margin: auto;
+}
+.mision__container .mision__right .branchs__container .mision__item h3 {
+  font-family: "gotham-bold";
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 90%;
+  line-height: 22px;
+  margin: auto;
+}
+.mision__container .mision__right .branchs__container .mision__item p {
+  font-family: "gotham-book";
+  font-size: 14px;
+  width: 90%;
+  text-align: justify;
+  line-height: 22px;
+  margin: auto;
+}
+.mision__container .mision__right .branchs__container .mision__item--2 {
+  margin-top: 20px;
+}
+.mision__container .mision__right .branchs__container .mision__item--3 {
+  margin-top: 20px;
+}
+
 /*Tablet*/
 @media only screen and (min-width: 700px) {
   .family__container {
     flex-direction: row;
     justify-content: center;
   }
+  .qs__container .qs h2 {
+    width: 70%;
+  }
+  .qs__container .qs p {
+    font-family: "gotham-book";
+    font-size: 14px;
+  }
+  .mision__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mision__container .mision__left {
+    width: 40%;
+    padding-right: 30px;
+  }
+  .mision__container .mision__right {
+    width: 40%;
+    padding-left: 30px;
+    margin-top: 0;
+  }
 }
-.qs__container .qs h2 {
-  width: 70%;
-}
-.qs__container .qs p {
-  width: 70%;
-}
-
 /*Desktop*/
 @media only screen and (min-width: 992px) {
   header nav div img {
-    width: 190px;
+    width: 90px;
     padding: 15px;
     margin-left: 60px;
   }
@@ -205,6 +291,9 @@ header nav div div .usaflag {
   }
   header nav div ul .nav-item--usa a {
     font-family: "gotham-light";
+  }
+  header nav div ul .nav-item span {
+    display: none;
   }
   header nav div ul li .nav-link:hover {
     color: #e50914 !important;
