@@ -279,6 +279,7 @@ header nav div div .txt__ev {
   line-height: 22px;
   margin: auto;
   padding: 10px;
+  padding-bottom: 30px;
 }
 .staff .staff__container p strong {
   font-family: "gotham-bold";
@@ -306,6 +307,117 @@ header nav div div .txt__ev {
 }
 .staff2 .staff__container2 h4 span {
   color: #e50914;
+}
+
+.online {
+  padding: 0 !important;
+}
+.online .online__container {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.online .online__container div {
+  background-image: url(./media/online_selling.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+.online .online__container p {
+  font-family: "gotham-book";
+  font-size: 14px;
+  width: 90%;
+  text-align: justify;
+  line-height: 22px;
+  margin: auto;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.stores {
+  margin-top: 30px;
+}
+.stores .stores1__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stores .stores1__container h2 {
+  font-family: "gotham-bold";
+  color: #e50914;
+  text-transform: uppercase;
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+}
+.stores .stores1__container p {
+  font-family: "gotham-book";
+  font-size: 14px;
+  width: 90%;
+  text-align: justify;
+  line-height: 22px;
+  margin: auto;
+  padding: 10px;
+}
+.stores .stores2__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stores .stores2__container .stores2__item {
+  width: 90%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.stores .stores2__container .stores2__item i {
+  font-size: 40px;
+  color: #232323;
+  text-align: center;
+  padding: 10px;
+}
+.stores .stores2__container .stores2__item h3 {
+  font-family: "gotham-bold";
+  font-size: 23px;
+  color: #e50914;
+  text-align: center;
+}
+.stores .stores2__container .stores2__item h4 {
+  font-family: "gotham-book";
+  font-size: 16px;
+  color: #232323;
+  text-align: center;
+}
+
+.map img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.brands .brands__title h2 {
+  font-family: "gotham-bold";
+  color: #232323;
+  text-transform: uppercase;
+  text-align: center;
+}
+.brands .brands__title h4 {
+  font-family: "gotham-book";
+  font-size: 16px;
+  color: #232323;
+  text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
 /*Tablet*/
@@ -381,6 +493,7 @@ header nav div div .txt__ev {
     width: 85%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   .family__container .family__item {
     margin: 20px;
@@ -391,6 +504,13 @@ header nav div div .txt__ev {
   }
   .qs__container .qs p {
     width: 40%;
+  }
+  .mision__container {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .mision__container .mision__left h2 {
+    font-size: 40px;
   }
   .staff .staff__container {
     background-color: #e5e5e5;
@@ -432,6 +552,40 @@ header nav div div .txt__ev {
     width: 80%;
     line-height: 40px;
   }
+  .online .online__container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+  }
+  .online .online__container div {
+    height: 500px;
+  }
+  .online .online__container p {
+    width: 80%;
+    padding: 80px;
+    width: 80%;
+  }
+  .map {
+    display: flex;
+    justify-content: center;
+  }
+  .map img {
+    width: 700px;
+  }
+  .stores .stores1__container {
+    width: 90%;
+    margin: auto;
+  }
+  .stores .stores2__container {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .stores .stores2__container .stores2__item h3 {
+    font-size: 18px;
+  }
 }
 /*Desktop xxl*/
 @media only screen and (min-width: 1500px) {
@@ -450,5 +604,28 @@ header nav div div .txt__ev {
   }
   .qs__container .qs p {
     width: 32%;
+  }
+  .stores {
+    margin-top: 100px;
+  }
+  .stores .stores1__container {
+    width: 80%;
+    margin: auto;
+  }
+  .stores .stores1__container h2 {
+    font-size: 40px;
+  }
+  .stores .stores1__container p {
+    font-size: 18px;
+  }
+  .stores .stores2__container {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .stores .stores2__container .stores2__item h3 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */

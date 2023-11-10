@@ -281,6 +281,7 @@ header{
                     line-height: 22px;
                     margin: auto;
                     padding: 10px;
+                    padding-bottom: 30px;
                         strong{
                             font-family: "gotham-bold";
                         }
@@ -311,7 +312,119 @@ header{
                 }
         }
 }
-
+.online{
+    padding: 0 !important;
+    .online__container{
+        background-color: #e5e5e5;
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+            div{
+                background-image: url(./media/online_selling.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 600px;
+            }
+            p{
+                font-family: "gotham-book";
+                font-size: 14px;
+                width: 90%;
+                text-align: justify;
+                line-height: 22px;
+                margin: auto;
+                padding: 10px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+    }
+}
+.stores{
+    margin-top: 30px;
+        .stores1__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                h2{
+                    font-family: "gotham-bold";
+                    color: $red-xpro;
+                    text-transform: uppercase;
+                    width: 90%;
+                    padding: 10px;
+                    text-align: center;
+                }
+                p{
+                    font-family: "gotham-book";
+                    font-size: 14px;
+                    width: 90%;
+                    text-align: justify;
+                    line-height: 22px;
+                    margin: auto;
+                    padding: 10px;
+                }
+        }
+        .stores2__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                .stores2__item{
+                    width: 90%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-right: 0;
+                    padding-left: 0;
+                    i{
+                        font-size: 40px;
+                        color: $black-xpro;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    h3{
+                        font-family: "gotham-bold";
+                        font-size: 23px;
+                        color: $red-xpro;
+                        text-align: center;
+                    }
+                    h4{
+                        font-family: "gotham-book";
+                        font-size: 16px;
+                        color: $black-xpro;
+                        text-align: center;
+                    }
+                }
+        }
+}
+.map{
+    img{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+.brands{
+    .brands__title{
+        h2{
+            font-family: "gotham-bold";
+            color: $black-xpro;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h4{
+            font-family: "gotham-book";
+            font-size: 16px;
+            color: $black-xpro;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
 /*Tablet*/
 @media only screen and (min-width: 700px){
 .family__container{
@@ -347,6 +460,7 @@ header{
         font-size: 30px;
     }
 }
+
 }
 
 /*Desktop*/
@@ -404,6 +518,7 @@ header{
     width: 85%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
         .family__item{
             margin: 20px;
         }
@@ -418,6 +533,15 @@ header{
                 width: 40%;
             }
     }
+}
+.mision__container{
+    margin-top: 70px;
+    margin-bottom: 30px;
+        .mision__left{
+            h2{
+                font-size: 40px;
+            }
+        }
 }
 .staff{
         .staff__container{
@@ -463,6 +587,47 @@ header{
         line-height: 40px;
     }
 }
+.online{
+    .online__container{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+            div{
+                height: 500px;
+            }
+            p{  
+                width: 80%;
+                padding: 80px;
+                width: 80%;
+            }
+        }
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+        img{
+            width: 700px;
+        }
+}
+.stores{
+    .stores1__container{
+        width: 90%;
+        margin: auto;
+    }
+    .stores2__container{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+            .stores2__item{
+                h3{
+                    font-size: 18px;
+                }
+            }
+    }
+}
 }
 
 /*Desktop xxl*/
@@ -488,6 +653,30 @@ header{
             }
     }
 }
-
+.stores{
+    margin-top: 100px;
+    .stores1__container{
+        width: 80%;
+        margin: auto;
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 18px;
+            }
+    }
+    .stores2__container{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+            .stores2__item{
+                h3{
+                    font-size: 30px;
+                }
+            }
+    }
+}
 }
 
