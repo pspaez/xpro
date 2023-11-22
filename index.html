@@ -88,7 +88,7 @@
                     </div>
                     <div class="family__item">
                         <div class="family__logo__container">
-                            <img src="./media/logo_casamarilla.svg" alt="logo Casa Amarilla">
+                            <img src="./media/logo_casamarilla.svg" alt="logo Casa Amarilla" class="logo_ca">
                         </div>
                         <h2>Casa Amarilla</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae et rem laborum inventore voluptates placeat quas explicabo velit minus!</p>
@@ -161,7 +161,7 @@
         <div class="row">
             <section class="col-sm-12 staff2">
                 <div class="staff__container2">
-                    <h4>Nuestro staff está en <span>constante evolución</span> gracias al apoyo de nuestros clientes y <span>compromiso de nuestro equipo de trabajo.</span></h4>
+                    <h4 class="title__tablet">Nuestro staff está en <span>constante evolución</span> gracias al apoyo de nuestros clientes y <span>compromiso de nuestro equipo de trabajo.</span></h4>
                 </div>
             </section>
             </div>
@@ -219,7 +219,6 @@
             <section class="col-sm-12 brands">
                     <div class="brands__title">
                         <h2>Nuestras marcas</h2>
-                        <h4>Te brindamos la solución y ponemos la firma.</h4>
                     </div>
                     <div class="brands__container">
                         <div class="brands__item brands__item--1">
@@ -257,37 +256,37 @@
                 <div class="contact__container">
                     <div class="contact__item--1">
                         <h2>Contactate</h2>
-                        <h4>Llamanos o dejanos tu mensaje</h4>
-                        <p>En Xpro nos gusta saber de vos. Escribinos cualquier inquietud que tengas.</p>
+                        
+                        <p>En Xpro nos gusta saber de vos. Llamanos o dejanos tu mensaje por cualquier inquietud que tengas.</p>
                     </div>
                 </div>
                 <div class="form__container">
                     <div class="form__item--1">
-                        <div class="casamatriz">
-                            <i class="fa-solid fa-building"></i>
-                            <h5>Casa matriz y oficina</h5>
-                            <p>Oliden 2750 - CP. C1440CRA<br>Capital Federal - Buenos Aires - Argentina</p>
-                        </div>
-                        <div class="telefonos">
-                            <i class="fa-solid fa-phone"></i>
-                            <h6>Argentina</h6>
-                            <p>Phone: +54.9.11.5277.0300</p>
-                            <h6>Brasil</h6>
-                            <p>Phone: +55.11.3230.2226</p>
-                            <h6>Chile</h6>
-                            <p>Phone: (+562) 3.210.8287</p>
-                            <h6>Paraguay</h6>
-                            <p>Phone: (+595) 21.419.8886</p>
-                            <h6>Perú</h6>
-                            <p>Phone: (+511) 642.9777</p>
-                            <h6>Uruguay</h6>
-                            <p>Phone: (+598) 0004.019.0911</p>
-                        </div>
-                        <div class="mail">
-                            <i class="fa-solid fa-envelope"></i>
-                            <h5>Mail</h5>
-                            <p>ventas@xpro.com.ar</p>
-                        </div>
+                            <div class="casamatriz item__datos">
+                                <i class="fa-solid fa-building tel"></i>
+                                <h5>Casa matriz y oficina</h5>
+                                <p>Oliden 2750 - CP. C1440CRA<br>Capital Federal - Buenos Aires - Argentina</p>
+                            </div>
+                            <div class="telefonos item__datos">
+                                <i class="fa-solid fa-phone tel"></i>
+                                <h6>Argentina</h6>
+                                <p>Phone: +54.9.11.5277.0300</p>
+                                <h6>Brasil</h6>
+                                <p>Phone: +55.11.3230.2226</p>
+                                <h6>Chile</h6>
+                                <p>Phone: (+562) 3.210.8287</p>
+                                <h6>Paraguay</h6>
+                                <p>Phone: (+595) 21.419.8886</p>
+                                <h6>Perú</h6>
+                                <p>Phone: (+511) 642.9777</p>
+                                <h6>Uruguay</h6>
+                                <p>Phone: (+598) 0004.019.0911</p>
+                            </div>
+                            <div class="mail item__datos">
+                                <i class="fa-solid fa-envelope"></i>
+                                <h5>Mail</h5>
+                                <p>ventas@xpro.com.ar</p>
+                            </div>
                         </div>
                     </div>
                     <form action="get" class="form__item--2">
@@ -295,6 +294,7 @@
                         <input type="mail" name="mail" id="mail" placeholder="mail">
                         <input type="text" name="Empresa" id="Empresa" placeholder="Empresa">
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <input type="button" name="button" id="button" placeholder="enviar">
                     </form>
                 </div>
             </section>
@@ -307,35 +307,20 @@
                 <div class="footer__container">
                     <div class="footer__left">
                         <img src="./media/logo_xpro.svg" alt="logo Xpro" class="logo__footer">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis reprehenderit minus hic quibusdam qui assumenda vitae minima quo cum! Quia consequuntur, dolore sit tenetur aliquid optio minus ducimus dignissimos repudiandae beatae velit, consequatur veritatis exercitationem cumque ullam culpa voluptatibus.</p>
-                        <ul class="navbar-nav navlist__container">
-                                <a class="nav-link active" aria-current="page" href="#">¿Quiénes somos?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><span>Nuestras marcas</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><span>Contacto</span></a>
-                            </li>
-                            <li class="nav-item nav-item--usa">
-                                <a class="nav-link txt__ev" href="#">English Version</a>
-                            </li>
-                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis reprehenderit minus hic quibusdam qui assumenda vitae minima quo cum! Quia consequuntur, dolore sit tenetur aliquid optio minus ducimus dignissimos repudiandae.</p>
                     </div>
                     <div class="footer__right">
-                        <ul>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><i class="fa-brands fa-instagram nav__item--ic"></i><span>Instagram</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><i class="fa-brands fa-linkedin nav__item--ic"></i><span>Linkedin</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link li__container" href="#"><i class="fa-brands fa-youtube nav__item--ic"></i><span>YouTube</span></a>
-                            </li>
+                        <ul class="socialmedia">
+                            <li><i class="fa-brands fa-instagram nav__item--ic"></i></li>
+                            <li><i class="fa-brands fa-x-twitter"></i></li>
+                            <li><i class="fa-brands fa-linkedin nav__item--ic"></i></li>
+                            <li><i class="fa-brands fa-youtube nav__item--ic"></i></li>
+                        </ul>
+                        <ul class="nav__footer">
+                            <li><a href="">¿Quiénes somos?</a></li>
+                            <li><a href="">Nuestras marcas</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">English version</a></li>
                         </ul>
                     </div>
                 </div>
@@ -343,6 +328,7 @@
             </div>
         </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
