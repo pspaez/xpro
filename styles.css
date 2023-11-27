@@ -443,7 +443,7 @@ header nav div div .txt__ev {
 .form {
   background-image: url(./media/background_form.jpg);
   background-position: right;
-  height: 1300px;
+  height: 1350px;
   margin-top: 30px;
 }
 .form .contact__container .contact__item--1 {
@@ -509,18 +509,63 @@ header nav div div .txt__ev {
   margin-bottom: 20px;
 }
 .form .form__item--2 input {
+  color: #fff;
   width: 90%;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgba(23, 23, 23, 0.0823529412);
+  border: 1px solid #fff;
+}
+.form .form__item--2 input:focus {
+  outline-color: #e50914;
+}
+.form .form__item--2 input::-moz-placeholder {
+  color: #fff;
+}
+.form .form__item--2 input::placeholder {
+  color: #fff;
 }
 .form .form__item--2 textarea {
+  color: #fff;
   width: 90%;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgba(23, 23, 23, 0.0823529412);
+  outline: none;
+  border: 1px solid #fff;
+}
+.form .form__item--2 textarea:focus {
+  outline-color: #e50914;
+}
+.form .form__item--2 textarea::-moz-placeholder {
+  color: #fff;
+}
+.form .form__item--2 textarea::placeholder {
+  color: #fff;
+}
+.form .form__item--2 .button {
+  background-color: rgb(239, 239, 239);
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .form__item--2 .button p {
+  text-align: center;
+  font-family: "gotham-bold";
+  color: #232323;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 .footer {
-  height: 550px;
+  height: 570px;
   background-color: #232323;
   color: #fff;
 }
@@ -642,6 +687,22 @@ header nav div div .txt__ev {
   .brands__container .brands__item--6 {
     grid-column: 2/3;
     grid-row: 3/4;
+  }
+  .form__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__container .form__item--1 {
+    width: 50%;
+  }
+  .form__container .form__item--2 {
+    width: 50%;
+  }
+  .form__container .form__item--2 input {
+    width: 50%;
+  }
+  .form__container .form__item--2 textarea {
+    width: 50%;
   }
   .footer {
     height: 400px;
