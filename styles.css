@@ -256,7 +256,7 @@ header nav div div .txt__ev {
   flex-direction: column;
 }
 .staff .staff__container div {
-  background-image: url(./media/staff.jpg);
+  background-image: url(./media/grid3.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -442,7 +442,7 @@ header nav div div .txt__ev {
 
 .form {
   background-image: url(./media/background_form.jpg);
-  background-position: right;
+  background-position: center;
   height: 1350px;
   margin-top: 30px;
 }
@@ -514,7 +514,7 @@ header nav div div .txt__ev {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: rgba(23, 23, 23, 0.0823529412);
+  background-color: rgba(23, 23, 23, 0.6352941176);
   border: 1px solid #fff;
 }
 .form .form__item--2 input:focus {
@@ -532,7 +532,7 @@ header nav div div .txt__ev {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: rgba(23, 23, 23, 0.0823529412);
+  background-color: rgba(23, 23, 23, 0.6352941176);
   outline: none;
   border: 1px solid #fff;
 }
@@ -651,8 +651,8 @@ header nav div div .txt__ev {
     padding-left: 30px;
     margin-top: 0;
   }
-  .staff__container2 .title__tablet {
-    font-size: 50px;
+  .staff2 .staff__container2 .title__tablet {
+    font-size: 35px;
   }
   .brands__title h2 {
     font-size: 45px;
@@ -688,21 +688,41 @@ header nav div div .txt__ev {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  .form__container {
+  .form {
+    height: 880px;
+  }
+  .form .contact__container {
+    margin-bottom: 50px;
+  }
+  .form .contact__container .contact__item--1 h2 {
+    font-size: 40px;
+  }
+  .form .contact__container .contact__item--1 p {
+    text-align: center;
+  }
+  .form .form__container {
     display: flex;
     flex-direction: row;
+    height: 650px;
   }
-  .form__container .form__item--1 {
+  .form .form__container .form__item--1 {
     width: 50%;
   }
-  .form__container .form__item--2 {
+  .form .form__container .form__item--1 .casamatriz i {
+    padding-top: 0;
+  }
+  .form .form__container .form__item--2 {
     width: 50%;
   }
-  .form__container .form__item--2 input {
-    width: 50%;
+  .form .form__container .form__item--2 input {
+    padding: 10px;
   }
-  .form__container .form__item--2 textarea {
-    width: 50%;
+  .form .form__container .form__item--2 textarea {
+    height: 700px;
+    padding: 10px;
+  }
+  .form .form__container .form__item--2 .button {
+    height: 60px;
   }
   .footer {
     height: 400px;
@@ -818,10 +838,9 @@ header nav div div .txt__ev {
     padding-top: 20px;
     width: 80%;
   }
-  .staff__container2 h4 {
-    font-size: 45px;
-    width: 80%;
-    line-height: 40px;
+  .staff2 .staff__container2 .title__tablet {
+    font-size: 42px;
+    line-height: 38px;
   }
   .online .online__container {
     display: flex;
@@ -932,7 +951,7 @@ header nav div div .txt__ev {
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 60px;
     width: 70%;
     margin-left: 53px;
@@ -941,10 +960,14 @@ header nav div div .txt__ev {
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     padding-top: 20px;
     width: 70%;
     margin-left: 53px;
+  }
+  .staff2 .staff__container2 .title__tablet {
+    font-size: 52px;
+    line-height: 48px;
   }
   .stores {
     margin-top: 100px;
@@ -968,5 +991,31 @@ header nav div div .txt__ev {
   }
   .stores .stores2__container .stores2__item h3 {
     font-size: 30px;
+  }
+  .form {
+    height: 1000px;
+  }
+  .form .contact__container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+  }
+  .form .contact__container .contact__item--1 h2 {
+    font-size: 50px;
+  }
+  .form .contact__container .contact__item--1 p {
+    font-size: 18px;
+  }
+  .form .form__container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+  }
+  .form .form__container .form__item--1 {
+    width: 400px;
+  }
+  .form .form__container .form__item--2 {
+    width: 600px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -259,7 +259,7 @@ header{
             display: flex;
             flex-direction: column;
                 div{
-                    background-image: url(./media/staff.jpg);
+                    background-image: url(./media/grid3.jpg);
                     background-position: center;
                     background-size: cover;
                     width: 100%;
@@ -448,7 +448,7 @@ header{
 }
 .form{
     background-image: url(./media/background_form.jpg);
-    background-position: right;
+    background-position: center;
     height: 1350px;
     margin-top: 30px;
         .contact__container{
@@ -526,7 +526,7 @@ header{
                     margin-top: 5px;
                     margin-bottom: 5px;
                     padding: 5px;
-                    background-color: #17171715;
+                    background-color: #171717a2;
                     border: 1px solid #fff
                 }
                 input:focus{
@@ -541,7 +541,7 @@ header{
                     margin-top: 5px;
                     margin-bottom: 5px;
                     padding: 5px;
-                    background-color: #17171715;
+                    background-color: #171717a2;
                     outline: none;
                     border: 1px solid #fff
                 }
@@ -569,7 +569,8 @@ header{
                             margin-bottom: 0;
                         }
                 }
-        }
+            }
+        
 }
 .footer{
     height: 570px;
@@ -664,9 +665,11 @@ header{
             margin-top: 0;
         }
 }
-.staff__container2{
-    .title__tablet{
-        font-size: 50px;
+.staff2{
+    .staff__container2{
+        .title__tablet{
+            font-size: 35px;
+        }
     }
 }
 .brands__title{
@@ -705,20 +708,43 @@ header{
             grid-row: 3/4;
         }
 }
-.form__container{
-    display: flex;
-    flex-direction: row;
-        .form__item--1{
-            width: 50%;
-            
-        }
-        .form__item--2{
-            width: 50%;
-                input{
-                    width: 50%;
+.form{
+    height: 880px;
+        .contact__container{
+            margin-bottom: 50px;
+                .contact__item--1{
+                    h2{
+                        font-size: 40px;
+                    }
+                    p{
+                        text-align: center;
+                    }
                 }
-                textarea{
+        }
+        .form__container{
+            display: flex;
+            flex-direction: row;
+            height: 650px;
+                .form__item--1{
                     width: 50%;
+                        .casamatriz{
+                            i{
+                                padding-top: 0;
+                            }
+                        }
+                }
+                .form__item--2{
+                    width: 50%;
+                        input{
+                            padding: 10px;
+                        }
+                        textarea{
+                            height: 700px;
+                            padding: 10px;
+                        }
+                        .button{
+                            height: 60px;
+                        }
                 }
         }
 }
@@ -860,13 +886,15 @@ header{
                 
             }
 } 
-.staff__container2{
-    h4{
-        font-size: 45px;
-        width: 80%;
-        line-height: 40px;
+.staff2{
+    .staff__container2{
+        .title__tablet{
+            font-size: 42px;
+            line-height: 38px;
+        }
     }
 }
+
 .online{
     .online__container{
         display: flex;
@@ -993,7 +1021,7 @@ header{
                 grid-column: 2/3;
                 grid-row: 1/2;
                 margin: 0;
-                font-size: 16px;
+                font-size: 15px;
                 padding-top: 60px;
                 width: 70%;
                 margin-left: 53px;
@@ -1002,7 +1030,7 @@ header{
                 grid-column: 2/3;
                 grid-row: 2/3;
                 margin: 0;
-                font-size: 16px;
+                font-size: 15px;
                 padding-top: 20px;
                 width: 70%;
                 margin-left: 53px;
@@ -1010,6 +1038,14 @@ header{
             
         }
 } 
+.staff2{
+    .staff__container2{
+        .title__tablet{
+            font-size: 52px;
+            line-height: 48px;
+        }
+    }
+}
 .stores{
     margin-top: 100px;
     .stores1__container{
@@ -1034,6 +1070,34 @@ header{
                 }
             }
     }
+}
+.form{
+    height: 1000px;
+        .contact__container{
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 200px;
+            .contact__item--1{
+                h2{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .form__container{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 200px;
+                .form__item--1{
+                    width: 400px;
+                }
+                .form__item--2{
+                    width: 600px;
+                }
+        }
 }
 }
 
