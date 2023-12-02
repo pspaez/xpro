@@ -256,11 +256,14 @@ header nav div div .txt__ev {
   flex-direction: column;
 }
 .staff .staff__container div {
-  background-image: url(./media/grid3.jpg);
+  background-image: url(./media/gridok.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 600px;
+}
+.staff .staff__container .staff__img--grid {
+  display: none;
 }
 .staff .staff__container p {
   font-family: "gotham-book";
@@ -441,9 +444,9 @@ header nav div div .txt__ev {
 }
 
 .form {
-  background-image: url(./media/background_form.jpg);
+  background-image: url(./media/background_form_mobile.jpg);
   background-position: center;
-  height: 1350px;
+  height: 1250px;
   margin-top: 30px;
 }
 .form .contact__container .contact__item--1 {
@@ -621,7 +624,10 @@ header nav div div .txt__ev {
 }
 
 @media only screen and (min-width: 400px) {
-  .footer {
+  .form {
+    background-image: url(./media/background_form_mobile_2.jpg);
+  }
+  .form .footer {
     height: 500px;
   }
 }
@@ -690,6 +696,7 @@ header nav div div .txt__ev {
   }
   .form {
     height: 880px;
+    background-image: url(./media/background_form_tablet.jpg);
   }
   .form .contact__container {
     margin-bottom: 50px;
@@ -703,26 +710,67 @@ header nav div div .txt__ev {
   .form .form__container {
     display: flex;
     flex-direction: row;
-    height: 650px;
+    justify-content: center;
+    height: 700px;
   }
   .form .form__container .form__item--1 {
-    width: 50%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .form .form__container .form__item--1 .casamatriz i {
     padding-top: 0;
+    text-align: left;
+    display: inline-block;
+  }
+  .form .form__container .form__item--1 .casamatriz h5 {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .casamatriz p {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form .form__container .form__item--1 .item__datos i {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos h6 {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos p {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form .form__container .form__item--1 .item__datos .mail i {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos .mail h5 {
+    text-align: left;
+  }
+  .form .form__container .form__item--1 .item__datos .mail p {
+    text-align: left;
   }
   .form .form__container .form__item--2 {
     width: 50%;
+    margin-right: 120px;
   }
   .form .form__container .form__item--2 input {
     padding: 10px;
   }
   .form .form__container .form__item--2 textarea {
-    height: 700px;
+    height: 400px;
     padding: 10px;
   }
   .form .form__container .form__item--2 .button {
-    height: 60px;
+    height: 50px;
   }
   .footer {
     height: 400px;
@@ -769,11 +817,12 @@ header nav div div .txt__ev {
     display: none;
   }
   header nav div ul li .nav-link:hover {
-    color: #e50914 !important;
+    color: #a1a1a1 !important;
     font-family: "gotham-bold";
     font-size: 12px;
     padding: 10px;
     text-transform: uppercase;
+    scale: 110%;
   }
   .title__container {
     margin-top: 50px;
@@ -811,16 +860,11 @@ header nav div div .txt__ev {
   .staff .staff__container {
     background-color: #e5e5e5;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 250px;
-  }
-  .staff .staff__container div {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 500px;
+    grid-template-rows: 50% 50%;
   }
   .staff .staff__container .staff__p--1 {
     grid-column: 2/3;
@@ -836,6 +880,7 @@ header nav div div .txt__ev {
     margin: 0 auto;
     font-size: 15px;
     padding-top: 20px;
+    margin-top: 20px;
     width: 80%;
   }
   .staff2 .staff__container2 .title__tablet {
@@ -907,6 +952,9 @@ header nav div div .txt__ev {
     grid-column: 3/4;
     grid-row: 2/3;
   }
+  .form {
+    background-image: url(./media/background_form_desktop.jpg);
+  }
   .footer {
     height: 350px;
   }
@@ -953,6 +1001,7 @@ header nav div div .txt__ev {
     margin: 0;
     font-size: 15px;
     padding-top: 60px;
+    margin-top: 40px;
     width: 70%;
     margin-left: 53px;
   }
@@ -962,6 +1011,7 @@ header nav div div .txt__ev {
     margin: 0;
     font-size: 15px;
     padding-top: 20px;
+    margin-top: 50px;
     width: 70%;
     margin-left: 53px;
   }
@@ -994,6 +1044,7 @@ header nav div div .txt__ev {
   }
   .form {
     height: 1000px;
+    background-image: url(./media/background_form_desktop_xxl.jpg);
   }
   .form .contact__container {
     margin-top: 30px;

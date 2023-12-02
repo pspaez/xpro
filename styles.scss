@@ -259,11 +259,14 @@ header{
             display: flex;
             flex-direction: column;
                 div{
-                    background-image: url(./media/grid3.jpg);
+                    background-image: url(./media/gridok.jpg);
                     background-position: center;
                     background-size: cover;
                     width: 100%;
                     height: 600px;
+                }
+                .staff__img--grid{
+                    display: none;
                 }
                 p{
                     font-family: "gotham-book";
@@ -447,9 +450,9 @@ header{
     }
 }
 .form{
-    background-image: url(./media/background_form.jpg);
+    background-image: url(./media/background_form_mobile.jpg);
     background-position: center;
-    height: 1350px;
+    height: 1250px;
     margin-top: 30px;
         .contact__container{
             .contact__item--1{
@@ -495,6 +498,7 @@ header{
                             text-transform: uppercase;
                             width: 90%;
                             text-align: center;
+                            
                         }
                         p{
                             font-family: "gotham-book";
@@ -543,7 +547,8 @@ header{
                     padding: 5px;
                     background-color: #171717a2;
                     outline: none;
-                    border: 1px solid #fff
+                    border: 1px solid #fff;
+                    
                 }
                 textarea:focus{
                     outline-color: #e50914;
@@ -631,9 +636,12 @@ header{
     background-color: $black-xpro;
 }
 @media only screen and (min-width: 400px){
+    .form{
+        background-image: url(./media/background_form_mobile_2.jpg);
     .footer{
         height: 500px;
-    }
+        }
+    }   
 }
 /*Tablet*/
 @media only screen and (min-width: 700px){
@@ -710,6 +718,7 @@ header{
 }
 .form{
     height: 880px;
+    background-image: url(./media/background_form_tablet.jpg);
         .contact__container{
             margin-bottom: 50px;
                 .contact__item--1{
@@ -724,26 +733,67 @@ header{
         .form__container{
             display: flex;
             flex-direction: row;
-            height: 650px;
+            justify-content: center;
+            height: 700px;
                 .form__item--1{
-                    width: 50%;
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
                         .casamatriz{
                             i{
                                 padding-top: 0;
+                                text-align: left;
+                                display: inline-block;
+                            }
+                            h5{
+                                text-align: left;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                        .item__datos{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            i{
+                                text-align: left;
+                            }
+                            h6{
+                                text-align: left;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                            .mail{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                i{
+                                    text-align: left;
+                                }
+                                h5{
+                                    text-align: left;
+                                }
+                                p{
+                                    text-align: left;
+                                }
                             }
                         }
                 }
                 .form__item--2{
                     width: 50%;
+                    margin-right: 120px;
                         input{
                             padding: 10px;
                         }
                         textarea{
-                            height: 700px;
+                            height: 400px;
                             padding: 10px;
                         }
                         .button{
-                            height: 60px;
+                            height: 50px;
                         }
                 }
         }
@@ -801,11 +851,12 @@ header{
                             }
                             li{
                                 .nav-link:hover{
-                                    color: $red-xpro!important;
+                                    color: #a1a1a1!important;
                                     font-family: "gotham-bold";
                                     font-size: 12px;
                                     padding: 10px;
                                     text-transform: uppercase;
+                                    scale: 110%;
                                 }
                             }
                     }
@@ -857,16 +908,11 @@ header{
         .staff__container{
             background-color: #e5e5e5;
             width: 100%;
-            height: 500px;
+            height: 600px;
             margin-top: 40px;
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 250px 250px;
-                div{
-                    grid-column: 1/2;
-                    grid-row: 1/3;
-                    height: 500px;
-                }
+            grid-template-rows: 50% 50%;
                 .staff__p--1{
                     grid-column: 2/3;
                     grid-row: 1/2;
@@ -881,6 +927,7 @@ header{
                     margin: 0 auto;
                     font-size: 15px;
                     padding-top: 20px;
+                    margin-top: 20px;
                     width: 80%;
                 }
                 
@@ -970,6 +1017,9 @@ header{
     }
     
 }
+.form{
+    background-image: url(./media/background_form_desktop.jpg);
+}
 .footer{
     height: 350px;
         .footer__container{
@@ -1023,6 +1073,7 @@ header{
                 margin: 0;
                 font-size: 15px;
                 padding-top: 60px;
+                margin-top: 40px;
                 width: 70%;
                 margin-left: 53px;
             }
@@ -1032,6 +1083,7 @@ header{
                 margin: 0;
                 font-size: 15px;
                 padding-top: 20px;
+                margin-top: 50px;
                 width: 70%;
                 margin-left: 53px;
             }
@@ -1073,6 +1125,7 @@ header{
 }
 .form{
     height: 1000px;
+    background-image: url(./media/background_form_desktop_xxl.jpg);
         .contact__container{
             margin-top: 30px;
             display: flex;
