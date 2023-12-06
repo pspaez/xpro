@@ -42,6 +42,8 @@ $red-xpro: #e50914;
 /*Mobile*/
 header{
     width: 100%;
+    position: fixed;
+    z-index: 10;
         .navbar{
             background-color: $black-xpro !important;
         }
@@ -100,6 +102,7 @@ header{
         }
 }
 .section__video{
+    display: none;
     padding: 0 !important;
     .video__container{
         position: relative;
@@ -114,8 +117,25 @@ header{
             }
     }
 }
-.title__container{
+.banner__home{
+    background-color: $black-xpro;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+        .title__container{
+                .title{
+                        font-family: "gotham-ultra";
+                        font-size: 62px;
+                        line-height: 50px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        padding: 10px;
+                        }
+        }
+}
+.title__container--old{
+    display: none;
     justify-content: center;
     margin-top: 20px;
         .title{
@@ -588,7 +608,7 @@ header{
             flex-direction: column;
             margin-top: 20px;
             img{
-                width: 100px;
+                width: 150px;
                 padding: 15px;
             }
             p{
@@ -624,11 +644,14 @@ header{
                             }
                             .mail{
                                 font-size: 25px;
+                                padding-right: 10px;
                             }
                         }
                         .li__mail{
                             margin-top: 20px;
-                            
+                            .a__mail{
+                                display: flex;
+                            }
                         }
 
                 }
@@ -651,6 +674,16 @@ header{
         height: 500px;
         }
     }   
+    .banner__home{
+            .title__container{
+                    .title{
+                            font-family: "gotham-ultra";
+                            font-size: 70px;
+                            line-height: 60px;
+                            padding: 10px;
+                            }
+            }
+    }
 }
 /*Tablet*/
 @media only screen and (min-width: 700px){
@@ -658,6 +691,16 @@ header{
     flex-direction: row;
     justify-content: center;
     }
+.banner__home{
+    .title__container{
+            .title{
+                    font-family: "gotham-ultra";
+                    font-size: 95px;
+                    line-height: 85px;
+                    padding: 10px;
+                    }
+        }
+}
 .qs__container{
         .qs{
                 h2{
@@ -882,6 +925,18 @@ header{
                 }
             }
     }
+.banner__home{
+        .title__container{
+                .title{
+                        font-family: "gotham-ultra";
+                        font-size: 120px;
+                        line-height: 100px;
+                        padding: 10px;
+                        margin-left: 60px;
+                        margin-right: 60px;
+                        }
+            }
+}
 .title__container{
     margin-top: 50px;
         .title{
@@ -1046,8 +1101,11 @@ header{
             justify-content: center;
             align-items: normal;
                 .footer__left{
-                    width: 60%;
+                    width: 50%;
                     padding: 40px;
+                        img{
+                            width: 200px;
+                        }
                 }
                 .footer__right{
                     width: 30%;
@@ -1065,6 +1123,18 @@ header{
 }
 .txt__nav{
     margin-right: 200px;
+}
+.banner__home{
+    .title__container{
+            .title{
+                    font-family: "gotham-ultra";
+                    font-size: 150px;
+                    line-height: 120px;
+                    padding: 10px;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                    }
+        }
 }
 .title__container{
     margin-top: 80px;

@@ -40,6 +40,8 @@
 /*Mobile*/
 header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 header .navbar {
   background-color: #232323 !important;
@@ -93,6 +95,7 @@ header nav div div .txt__ev {
 }
 
 .section__video {
+  display: none;
   padding: 0 !important;
 }
 .section__video .video__container {
@@ -108,12 +111,28 @@ header nav div div .txt__ev {
   height: auto;
 }
 
-.title__container {
+.banner__home {
+  background-color: #232323;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__home .title__container .title {
+  font-family: "gotham-ultra";
+  font-size: 62px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.title__container--old {
+  display: none;
   justify-content: center;
   margin-top: 20px;
 }
-.title__container .title {
+.title__container--old .title {
   font-family: "gotham-Bold";
   text-transform: uppercase;
   text-align: center;
@@ -581,7 +600,7 @@ header nav div div .txt__ev {
   margin-top: 20px;
 }
 .footer .footer__container .footer__left img {
-  width: 100px;
+  width: 150px;
   padding: 15px;
 }
 .footer .footer__container .footer__left p {
@@ -617,9 +636,13 @@ header nav div div .txt__ev {
 }
 .footer .footer__container .footer__right .nav__footer li .mail {
   font-size: 25px;
+  padding-right: 10px;
 }
 .footer .footer__container .footer__right .nav__footer .li__mail {
   margin-top: 20px;
+}
+.footer .footer__container .footer__right .nav__footer .li__mail .a__mail {
+  display: flex;
 }
 
 .copy {
@@ -639,12 +662,24 @@ header nav div div .txt__ev {
   .form .footer {
     height: 500px;
   }
+  .banner__home .title__container .title {
+    font-family: "gotham-ultra";
+    font-size: 70px;
+    line-height: 60px;
+    padding: 10px;
+  }
 }
 /*Tablet*/
 @media only screen and (min-width: 700px) {
   .family__container {
     flex-direction: row;
     justify-content: center;
+  }
+  .banner__home .title__container .title {
+    font-family: "gotham-ultra";
+    font-size: 95px;
+    line-height: 85px;
+    padding: 10px;
   }
   .qs__container .qs h2 {
     width: 70%;
@@ -844,6 +879,14 @@ header nav div div .txt__ev {
     text-transform: uppercase;
     scale: 110%;
   }
+  .banner__home .title__container .title {
+    font-family: "gotham-ultra";
+    font-size: 120px;
+    line-height: 100px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
   .title__container {
     margin-top: 50px;
   }
@@ -984,8 +1027,11 @@ header nav div div .txt__ev {
     align-items: normal;
   }
   .footer .footer__container .footer__left {
-    width: 60%;
+    width: 50%;
     padding: 40px;
+  }
+  .footer .footer__container .footer__left img {
+    width: 200px;
   }
   .footer .footer__container .footer__right {
     width: 30%;
@@ -999,6 +1045,14 @@ header nav div div .txt__ev {
     margin-left: 200px;
   }
   .txt__nav {
+    margin-right: 200px;
+  }
+  .banner__home .title__container .title {
+    font-family: "gotham-ultra";
+    font-size: 150px;
+    line-height: 120px;
+    padding: 10px;
+    margin-left: 200px;
     margin-right: 200px;
   }
   .title__container {
