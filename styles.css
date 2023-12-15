@@ -117,6 +117,7 @@ header nav div div .txt__ev {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .banner__home .title__container .title {
   font-family: "gotham-ultra";
@@ -125,6 +126,11 @@ header nav div div .txt__ev {
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
+}
+.banner__home img {
+  width: 80px;
+  position: absolute;
+  top: 90%;
 }
 
 .title__container--old {

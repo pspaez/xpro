@@ -123,6 +123,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
         .title__container{
                 .title{
                         font-family: "gotham-ultra";
@@ -132,6 +133,11 @@ header{
                         text-transform: uppercase;
                         padding: 10px;
                         }
+        }
+        img{
+            width: 80px;
+            position: absolute;
+            top: 90%;
         }
 }
 .title__container--old{
