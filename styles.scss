@@ -347,7 +347,7 @@ header{
         display: flex;
         flex-direction: column;
             div{
-                background-image: url(./media/online_selling.jpg);
+                background-image: url(./media/online_selling_ok.jpg);
                 background-position: center;
                 background-size: cover;
                 width: 100%;
@@ -476,8 +476,9 @@ header{
     }
 }
 .form{
-    background-image: url(./media/background_form_mobile.jpg);
-    background-position: center;
+    background-image: url(./media/background_form_final.jpg);
+    background-position: bottom;
+    background-size: cover;
     height: 1230px;
     margin-top: 30px;
         .contact__container{
@@ -675,7 +676,7 @@ header{
 }
 @media only screen and (min-width: 400px){
     .form{
-        background-image: url(./media/background_form_mobile_2.jpg);
+        background-image: url(./media/background_form_final.jpg);
     .footer{
         height: 500px;
         }
@@ -776,25 +777,22 @@ header{
 }
 .form{
     height: 880px;
-    background-image: url(./media/background_form_tablet.jpg);
+    background-image: url(./media/background_form_final.jpg);
         .contact__container{
             margin-bottom: 50px;
             margin: 0;
             display: flex;
-            justify-content: flex-end;
-            text-align: left;
+            justify-content: center;
                 .contact__item--1{
                     width: 75%;
                     margin-bottom: 20px;
                     h2{
                         font-size: 40px;
-                        text-align: left;
-                        margin-right: 0;
-                        padding-left: 0;
+                        text-align: center;
                     }
                     p{
-                        text-align: left;
-                        font-size: 18px;
+                        text-align: center;
+                        font-size: 16px;
                     }
                 }
         }
@@ -804,10 +802,10 @@ header{
             justify-content: center;
             height: 700px;
                 .form__item--1{
-                    width: 45%;
+                    width: 50%;
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-end;
+                    align-items: center;
                         .casamatriz{
                             i{
                                 padding-top: 0;
@@ -852,7 +850,6 @@ header{
                 }
                 .form__item--2{
                     width: 50%;
-                    
                         input{
                             padding: 10px;
                         }
@@ -861,7 +858,7 @@ header{
                             padding: 10px;
                         }
                         .button{
-                            height: 50px;
+                            height: 40px;
                         }
                 }
         }
@@ -1098,7 +1095,8 @@ header{
     
 }
 .form{
-    background-image: url(./media/background_form_desktop.jpg);
+    background-image: url(./media/background_form_final.jpg);
+    
 }
 .footer{
     height: 350px;
@@ -1220,7 +1218,8 @@ header{
 }
 .form{
     height: 900px;
-    background-image: url(./media/background_form_desktop_xxl.jpg);
+    background-image: url(./media/background_form_final.jpg);
+    background-position: bottom;
         .contact__container{
             margin-top: 30px;
             display: flex;

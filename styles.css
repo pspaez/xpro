@@ -344,7 +344,7 @@ header nav div div .txt__ev {
   flex-direction: column;
 }
 .online .online__container div {
-  background-image: url(./media/online_selling.jpg);
+  background-image: url(./media/online_selling_ok.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -469,8 +469,9 @@ header nav div div .txt__ev {
 }
 
 .form {
-  background-image: url(./media/background_form_mobile.jpg);
-  background-position: center;
+  background-image: url(./media/background_form_final.jpg);
+  background-position: bottom;
+  background-size: cover;
   height: 1230px;
   margin-top: 30px;
 }
@@ -663,7 +664,7 @@ header nav div div .txt__ev {
 
 @media only screen and (min-width: 400px) {
   .form {
-    background-image: url(./media/background_form_mobile_2.jpg);
+    background-image: url(./media/background_form_final.jpg);
   }
   .form .footer {
     height: 500px;
@@ -746,14 +747,13 @@ header nav div div .txt__ev {
   }
   .form {
     height: 880px;
-    background-image: url(./media/background_form_tablet.jpg);
+    background-image: url(./media/background_form_final.jpg);
   }
   .form .contact__container {
     margin-bottom: 50px;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-    text-align: left;
+    justify-content: center;
   }
   .form .contact__container .contact__item--1 {
     width: 75%;
@@ -761,13 +761,11 @@ header nav div div .txt__ev {
   }
   .form .contact__container .contact__item--1 h2 {
     font-size: 40px;
-    text-align: left;
-    margin-right: 0;
-    padding-left: 0;
+    text-align: center;
   }
   .form .contact__container .contact__item--1 p {
-    text-align: left;
-    font-size: 18px;
+    text-align: center;
+    font-size: 16px;
   }
   .form .form__container {
     display: flex;
@@ -776,10 +774,10 @@ header nav div div .txt__ev {
     height: 700px;
   }
   .form .form__container .form__item--1 {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
   .form .form__container .form__item--1 .casamatriz i {
     padding-top: 0;
@@ -831,7 +829,7 @@ header nav div div .txt__ev {
     padding: 10px;
   }
   .form .form__container .form__item--2 .button {
-    height: 50px;
+    height: 40px;
   }
   .footer {
     height: 400px;
@@ -1022,7 +1020,7 @@ header nav div div .txt__ev {
     grid-row: 2/3;
   }
   .form {
-    background-image: url(./media/background_form_desktop.jpg);
+    background-image: url(./media/background_form_final.jpg);
   }
   .footer {
     height: 350px;
@@ -1124,7 +1122,8 @@ header nav div div .txt__ev {
   }
   .form {
     height: 900px;
-    background-image: url(./media/background_form_desktop_xxl.jpg);
+    background-image: url(./media/background_form_final.jpg);
+    background-position: bottom;
   }
   .form .contact__container {
     margin-top: 30px;
