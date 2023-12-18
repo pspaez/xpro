@@ -484,7 +484,7 @@ header nav div div .txt__ev {
 .form .contact__container .contact__item--1 h2 {
   font-family: "gotham-bold";
   font-size: 30px;
-  color: #e50914;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
@@ -713,6 +713,7 @@ header nav div div .txt__ev {
   }
   .brands__title h2 {
     font-size: 45px;
+    margin-top: 80px;
   }
   .brands__container {
     width: 75%;
@@ -748,6 +749,7 @@ header nav div div .txt__ev {
   .form {
     height: 880px;
     background-image: url(./media/background_form_final.jpg);
+    margin-top: 100px;
   }
   .form .contact__container {
     margin-bottom: 50px;
@@ -1022,6 +1024,13 @@ header nav div div .txt__ev {
   .form {
     background-image: url(./media/background_form_final.jpg);
   }
+  .form .form__container .form__item--1 {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .form .form__container .form__item--2 {
+    margin-right: 150px;
+  }
   .footer {
     height: 350px;
   }
@@ -1144,13 +1153,13 @@ header nav div div .txt__ev {
   }
   .form .form__container {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 455px;
+    justify-content: center;
   }
   .form .form__container .form__item--1 {
-    width: 400px;
+    width: 40%;
   }
   .form .form__container .form__item--2 {
-    width: 700px;
+    width: 60%;
+    margin-right: 200px;
   }
 }/*# sourceMappingURL=styles.css.map */

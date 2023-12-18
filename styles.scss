@@ -490,7 +490,7 @@ header{
                 h2{
                     font-family: "gotham-bold";
                     font-size: 30px;
-                    color: $red-xpro;
+                    color: #fff;
                     text-transform: uppercase;
                     text-align: center;
                 }
@@ -742,6 +742,7 @@ header{
 .brands__title{
     h2{
         font-size: 45px;
+        margin-top: 80px;
     }
 }
 .brands__container{
@@ -778,6 +779,7 @@ header{
 .form{
     height: 880px;
     background-image: url(./media/background_form_final.jpg);
+    margin-top: 100px;
         .contact__container{
             margin-bottom: 50px;
             margin: 0;
@@ -1096,6 +1098,15 @@ header{
 }
 .form{
     background-image: url(./media/background_form_final.jpg);
+    .form__container{
+        .form__item--1{
+            width: 50%;
+            margin-left: 30px;
+        }
+        .form__item--2{
+            margin-right: 150px;
+        }
+    }
     
 }
 .footer{
@@ -1240,13 +1251,13 @@ header{
         }
         .form__container{
             display: flex;
-            justify-content: flex-end;
-            margin-right: 455px;
+            justify-content: center;
                 .form__item--1{
-                    width: 400px;
+                    width: 40%;
                 }
                 .form__item--2{
-                    width: 700px;
+                    width: 60%;
+                    margin-right: 200px;
                 }
         }
 }
