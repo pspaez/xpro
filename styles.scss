@@ -427,10 +427,17 @@ header{
         }
 }
 .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
         width: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+    .data__map{
+        position: absolute;
+        width: 100%;
     }
 }
 .brands{
@@ -739,6 +746,14 @@ header{
         }
     }
 }
+.map{
+    img{
+        width: 90%;
+    }
+    .data__map{
+        width: 90%;
+    }
+}
 .brands__title{
     h2{
         font-size: 45px;
@@ -1020,7 +1035,6 @@ header{
         }
     }
 }
-
 .online{
     .online__container{
         display: flex;
@@ -1036,13 +1050,13 @@ header{
             }
         }
 }
-
 .map{
-    display: flex;
-    justify-content: center;
-        img{
-            width: 700px;
-        }
+    img{
+        width: 60%;
+    }
+    .data__map{
+        width: 60%;
+    }
 }
 .stores{
     .stores1__container{
@@ -1200,6 +1214,14 @@ header{
             font-size: 52px;
             line-height: 48px;
         }
+    }
+}
+.map{
+    img{
+        width: 50%;
+    }
+    .data__map{
+        width: 50%;
     }
 }
 .stores{
